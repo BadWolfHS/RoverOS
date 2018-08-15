@@ -42,11 +42,13 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t lenght
         }
         if (payload[0] == 'C') {
           CameraPower = WebSocketData-1;
-          Serial.println(WebSocketData);
+          digitalWrite(CameraPin, CameraPower);
+          Serial.println(CameraPower);
         }
         if (payload[0] == 'L') {
           LEDPower = WebSocketData-1;
-          Serial.println(WebSocketData);
+          digitalWrite(LEDPin, LEDPower);
+          Serial.println(LEDPower);
         }
         if (payload[0] == 'F') {
           FullStep = WebSocketData;

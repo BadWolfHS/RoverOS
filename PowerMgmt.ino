@@ -21,7 +21,7 @@ void SleepWatchdog() {
 void CheckVoltage () {
 
   sensorValue = analogRead(A0);
-  voltage = sensorValue * .0063;
+  voltage = sensorValue * .0057;
   http.begin("http://192.168.1.11:8080/rover/savepost.php?payload=" + String(voltage));
   httpCode = http.GET();
   delay(100);
@@ -75,7 +75,7 @@ void BatteryLevel () {
    if((tSocket - lSocket) > 300) {                          
         
   sensorValue = analogRead(A0);
-  voltage = sensorValue * .0063;
+  voltage = sensorValue * .0057;
   SocketMSG = String(voltage);
         yield();
         webSocket.broadcastTXT(SocketMSG);
