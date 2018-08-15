@@ -290,14 +290,13 @@ font-weight: 600;
 
 .button2 {
    margin: 2px 0px;
-width: 66px;
-height: 66px;
-    background-color: #555555;
-    color: #d6d8db;
-    border: 2px solid #555555;
+  width: 66px;
+  height: 66px;
+  background-color: #555555;
+  color: #d6d8db;
+  border: 2px solid #555555;
   border-radius: 4px;
   font-size: 36px;
-
   color: white;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #474747;
@@ -351,19 +350,19 @@ height: 66px;
 
 
 .slidecontainer {
-    width: 100%;
+  width: 100%;
 }
 
 .slider {
   margin: 8px 4px;
-    -webkit-appearance: none;
-    width: 90%;
-    height: 5%;
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+  -webkit-appearance: none;
+  width: 90%;
+  height: 5%;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
 
 .slider:hover {
